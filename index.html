@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un recorrido práctico por Python, ciencia de datos y despliegue de modelos para tomar decisiones con inteligencia predictiva.">
+  <meta name="theme-color" content="#13284A">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%2313284A%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22%23FFCC1A%22/%3E%3C/svg%3E">
+  <title>Inteligencia Predictiva en Acción | Del dato a la decisión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Inteligencia Predictiva en Acción, inicio"><span class="brand-mark">ip<span>.</span></span><span>Inteligencia<br>Predictiva en Acción</span></a>
+      <nav class="navigation" aria-label="Navegación principal">
+        <a href="#enfoque">Enfoque</a><a href="#indice">Índice</a><a href="#autores">Autores</a>
+        <a class="nav-download" href="material-lectores.zip" download>Material del lector <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero shell" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Un libro para aprender haciendo</p>
+        <h1 id="hero-title">Del dato<br><span>a la decisión</span><i>.</i></h1>
+        <p class="hero-lead">Construye, evalúa y despliega inteligencia predictiva con Python. Un recorrido práctico para entender qué hace un modelo y cómo llevar sus resultados a una decisión.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#indice">Explorar el libro <span aria-hidden="true">↗</span></a><a class="text-link" href="material-lectores.zip" download>Descargar material <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-meta"><span>PYTHON / MACHINE LEARNING</span><span>07 CAPÍTULOS</span><span>DE LA TABLA A LA API</span></div>
+      </div>
+      <div class="hero-art" aria-label="Representación gráfica de la portada del libro">
+        <div class="art-index" aria-hidden="true"><span>01 / 07</span><span>INTELLIGENCE<br>IN PRACTICE</span></div>
+        <div class="book-cover">
+          <div class="cover-top"><span>CUADERNO DE CAMPO</span><span>01</span></div>
+          <div class="cover-title">Inteligencia<br>Predictiva<br><strong>en Acción</strong><span>.</span></div>
+          <div class="cover-graphic" aria-hidden="true"><svg viewBox="0 0 320 160" fill="none"><path d="M0 145H320M0 100H320M0 55H320M0 10H320" stroke="currentColor" opacity=".22"/><path d="M10 130L62 112L112 118L158 76L208 84L260 34L310 17" stroke="#FFCC1A" stroke-width="2"/><circle cx="62" cy="112" r="4" fill="#FFCC1A"/><circle cx="158" cy="76" r="4" fill="#FFCC1A"/><circle cx="260" cy="34" r="4" fill="#FFCC1A"/><circle cx="310" cy="17" r="4" fill="#FFCC1A"/></svg></div>
+          <div class="cover-bottom"><span>CONSTRUIR · EVALUAR · DESPLEGAR</span><span>PY / ML</span></div>
+        </div>
+        <div class="art-note" aria-hidden="true"><span>DE LOS DATOS</span><strong>AL CRITERIO.</strong></div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="enfoque" aria-labelledby="enfoque-title">
+      <div class="shell manifesto-grid">
+        <div><p class="eyebrow dark-label">01 / EL ENFOQUE</p><h2 id="enfoque-title">La predicción<br>no termina en<br><em>un modelo.</em></h2></div>
+        <div class="manifesto-copy"><p class="manifesto-intro">Una probabilidad cobra sentido cuando se conecta con una pregunta, una capacidad de acción y el coste de equivocarse.</p><p>El libro sigue un caso de retención de clientes: desde la lectura y preparación de datos hasta la evaluación, la priorización y la puesta en marcha de un servicio. Cada etapa relaciona el código con la decisión que debe respaldar.</p><a class="inline-link" href="#indice">Ver el recorrido <span aria-hidden="true">↗</span></a></div>
+        <div class="manifesto-index" aria-hidden="true">DATA<br>→ MODEL<br>→ ACTION</div>
+      </div>
+    </section>
+
+    <section class="method shell" aria-labelledby="method-title">
+      <div class="method-heading"><p class="eyebrow">02 / LA PRÁCTICA</p><h2 id="method-title">Del razonamiento<br>a la ejecución<span class="accent">.</span></h2><p>Los ejemplos conectan cada transformación con su propósito. Los cuadernos permiten ejecutar, modificar y comprobar el procedimiento.</p></div>
+      <div class="code-window" aria-label="Ejemplo ilustrativo de un flujo en Python">
+        <div class="code-bar"><span><i></i><i></i><i></i> flujo.py</span><button class="copy-code" type="button" data-copy="code-example">Copiar</button></div>
+        <pre><code id="code-example"><span class="comment"># Esquema ilustrativo del recorrido</span>
+<span class="variable">datos</span> = <span class="function">preparar</span>(tabla)
+<span class="variable">modelo</span> = <span class="function">entrenar</span>(datos.entrenamiento)
+<span class="variable">riesgo</span> = modelo.<span class="function">predict_proba</span>(datos.validacion)
+
+<span class="comment"># El criterio y la capacidad orientan la acción</span>
+<span class="variable">prioridad</span> = <span class="function">seleccionar</span>(riesgo, capacidad)</code></pre>
+        <p class="code-caption">ESQUEMA CONCEPTUAL · NO ES UN SCRIPT EJECUTABLE</p><span class="sr-only" id="copy-status" role="status" aria-live="polite"></span>
+      </div>
+      <div class="method-foot"><span>01 / DATOS</span><span>02 / EVALUACIÓN</span><span>03 / DECISIÓN</span><span>04 / SERVICIO</span></div>
+    </section>
+
+    <section class="roadmap" id="indice" aria-labelledby="indice-title"><div class="shell">
+      <div class="section-heading"><div><p class="eyebrow">03 / EL RECORRIDO</p><h2 id="indice-title">Siete capítulos.<br>Una decisión.</h2></div><p>Abre cada capítulo para conocer su función dentro del proyecto. Las actividades acompañan el recorrido completo.</p></div>
+      <div class="chapter-list" id="chapter-list">
+        <details class="chapter" open><summary><span class="chapter-no">01</span><span class="chapter-title">Python para pensar con datos</span><span class="chapter-symbol" aria-hidden="true"></span></summary><div class="chapter-body"><p>Variables, colecciones, funciones y tablas para representar información y aplicar reglas.</p><span>BASES / PYTHON / PANDAS</span></div></details>
+        <details class="chapter"><summary><span class="chapter-no">02</span><span class="chapter-title">Preparar datos para aprender</span><span class="chapter-symbol" aria-hidden="true"></span></summary><div class="chapter-body"><p>Auditoría, tipos, valores ausentes y variables de negocio antes del modelado.</p><span>CALIDAD / PREPARACIÓN</span></div></details>
+        <details class="chapter"><summary><span class="chapter-no">03</span><span class="chapter-title">Explorar para formular hipótesis</span><span class="chapter-symbol" aria-hidden="true"></span></summary><div class="chapter-body"><p>Distribuciones, segmentos y asociaciones para formular preguntas sin confundirlas con causalidad.</p><span>EXPLORACIÓN / CHURN</span></div></details>
+        <details class="chapter"><summary><span class="chapter-no">04</span><span class="chapter-title">Evaluar sin engañarse</span><span class="chapter-symbol" aria-hidden="true"></span></summary><div class="chapter-body"><p>Particiones, pipelines y métricas para examinar el desempeño y prevenir la fuga de datos.</p><span>VALIDACIÓN / MÉTRICAS</span></div></details>
+        <details class="chapter"><summary><span class="chapter-no">05</span><span class="chapter-title">Elegir modelos y medir valor</span><span class="chapter-symbol" aria-hidden="true"></span></summary><div class="chapter-body"><p>Comparación de modelos, umbrales de clasificación e introducción a la regresión.</p><span>MODELOS / UMBRALES</span></div></details>
+        <details class="chapter"><summary><span class="chapter-no">06</span><span class="chapter-title">Proyecto integral: priorizar la retención</span><span class="chapter-symbol" aria-hidden="true"></span></summary><div class="chapter-body"><p>Calibración, capacidad y supuestos económicos para construir una lista priorizada.</p><span>PROYECTO / DECISIÓN</span></div></details>
+        <details class="chapter"><summary><span class="chapter-no">07</span><span class="chapter-title">Del pipeline a un servicio</span><span class="chapter-symbol" aria-hidden="true"></span></summary><div class="chapter-body"><p>Inferencia, API, pruebas y monitoreo para utilizar el pipeline de forma repetible.</p><span>FASTAPI / DESPLIEGUE</span></div></details>
+      </div>
+    </div></section>
+
+    <section class="authors shell" id="autores" aria-labelledby="autores-title">
+      <div class="authors-heading"><p class="eyebrow">04 / LOS AUTORES</p><h2 id="autores-title">Conocimiento<br>en perspectiva<span class="accent">.</span></h2><p>Experiencia académica y profesional aplicada a datos, operaciones y proyectos.</p></div>
+      <div class="author-list">
+        <article class="author"><span class="author-no">01</span><div><h3>Jorge Mario López Pereira</h3><p>Ingeniero industrial y magíster en Ingeniería Industrial. Profesor titular de la Universidad de Córdoba, trabaja en ciencia de datos, investigación de operaciones y optimización de cadenas de suministro. Integra GITOC.</p><a href="https://orcid.org/0000-0001-7317-8772" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></div></article>
+        <article class="author"><span class="author-no">02</span><div><h3>Iván Darío Meléndrez Lázaro</h3><p>Ingeniero industrial y magíster en Gerencia de Proyectos. Consultor y docente de la Universidad de Córdoba, con experiencia en proyectos, rediseño organizacional y sistemas integrados de gestión.</p><a href="https://orcid.org/0000-0003-1889-3663" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></div></article>
+        <article class="author"><span class="author-no">03</span><div><h3>Tobías Alfonso Parodi Camaño</h3><p>Doctor en Innovación, magíster en Administración de Organizaciones e ingeniero industrial. Docente investigador vinculado a la Universidad de Córdoba y la CUN; integra los grupos Escala y GITOC.</p><a href="https://orcid.org/0000-0003-4548-1058" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="download-section"><div class="shell download-inner"><div><p class="eyebrow">05 / MATERIAL COMPLEMENTARIO</p><h2>El siguiente paso<br>está en tus manos<span>.</span></h2><p>Descarga los cuadernos, ejercicios, soluciones, datos y recursos que acompañan el libro.</p></div><div><a class="button button-primary" href="material-lectores.zip" download>Descargar material <span aria-hidden="true">↓</span></a><p class="download-note">Archivo ZIP protegido. La clave está en la introducción del libro.</p></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><span>INTELIGENCIA PREDICTIVA EN ACCIÓN</span><a href="#inicio">Volver arriba ↑</a><span>DATOS / MODELOS / DECISIONES</span></div></footer>
+</body>
+</html>
